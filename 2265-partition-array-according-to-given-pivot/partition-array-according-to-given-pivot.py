@@ -5,13 +5,11 @@ class Solution:
         less = []
         equal = []
         greater = []
-        
-        for num in nums:
-            if num < pivot:
-                less.append(num)
-            elif num == pivot:
-                equal.append(num)
+        for i in range(len(nums)):
+            if nums[i] < pivot:
+                less.append(nums[i])
+            elif nums[i] == pivot:
+                equal.append(nums[i])
             else:
-                greater.append(num)
-        
+                greater.append(nums[i])
         return less + equal + greater
