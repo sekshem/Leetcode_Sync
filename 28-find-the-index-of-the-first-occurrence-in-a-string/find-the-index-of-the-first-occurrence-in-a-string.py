@@ -1,7 +1,6 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        if not needle:
-            return 0
+
         i=0
         j=0
         while(j<len(haystack)):
