@@ -3,8 +3,7 @@ class Solution:
         mp = {}
         for i in range(len(nums)):
             mp[nums[i]] = mp.get(nums[i],0) + 1
-        a = sorted(mp.keys(), key= lambda x : mp[x], reverse = True )
+        a = sorted(mp.keys(), key = lambda x: mp[x], reverse = True)
         b = a[:k]
-        return b
-             
+        return b 
         
