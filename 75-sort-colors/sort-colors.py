@@ -5,19 +5,16 @@ class Solution:
         """
         n = len(nums)
         l = 0
-        m = 0 
-        h = n-1
-        while m<=h:
-            if nums[m]==0:
-                nums[l], nums[m] = nums[m], nums[l]
-                l+=1
+        m = 0
+        r = n-1
+        while m <= r:
+            if nums[m] == 0:
+                nums[m], nums[l] = nums[l], nums[m]
                 m+=1
-            elif nums[m]==1:
+                l+=1
+            elif nums[m] == 1:
                 m+=1
             else:
-                nums[m], nums[h] = nums[h], nums[m]
-                h-=1
-
-
-                 
+                nums[r], nums[m] = nums[m], nums[r]
+                r-=1
                 
